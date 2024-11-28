@@ -1,14 +1,32 @@
 #pragma once
 
+#include <vector>
+
 #include <db/Query.hpp>
 
+using namespace std;
+
 namespace db {
+class Histogram {
+  public:
+    int h,w,l,r;
+  public:
+    Histogram(int w, int l, int r):w(w),l(l),r(r), h(0){}
+  };
+
 
 /**
  * A class to represent a fixed-width histogram over a single integer-based field.
  */
 class ColumnStats {
   // TODO pa4: add private members
+
+private:
+  unsigned buckets;
+  int min;
+  int max;
+  int w;
+  std::vector<Histogram*> hs;
 
 public:
   /**
