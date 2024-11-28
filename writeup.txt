@@ -1,0 +1,24 @@
+1. Describe any design decisions you made.
+
+
+
+2. Describe any missing or incomplete elements of your code.
+
+
+
+3. Answer the analytical questions.
+Q1.Given the cardinality of a selection predicate, can you estimate the IO cost of the query? What other factors would you need to consider to estimate the IO cost?
+
+Yes, the I/O cost of the query can be estimated by the given cardinality of a selection predicate. The I/O cost for a selection predicate can be estimated by the number of 
+pages that need to be accessed. If the table was stored in a heapfile, then every page may be scanned sequentially, resulting in IO cost proportional to the total number of pages in the file. 
+If the table was stored in BTreeFile, the cost is proportional to the depth of the tree plus the number of scanned leaf pages. Other factors that need to be considered to estimate the IO cost 
+are whether it is clustered or unclustered indices of the storage; the size of the buffer pool, where larger size reduces IO; the disk and memory speed, and the predicate selectivity of the matched tuples. 
+
+Q2.In the previous assignment we introduced a join operation. How would you estimate the cardinality of a join between two tables based on the histograms of the join columns?
+
+
+Q3.A table is stored in a file that consists of 150000 pages. Assume the cardinality of a predicate is 1000, a leaf page can fit 50 tuples, and the table is stored in a BTreeFile with 3 levels (root -> internal -> leaf). How many pages would you need to read to evaluate the predicate? What if the table was stored in a HeapFile?
+
+
+
+4. Describe how long you spent on the assignment, and whether there was anything you found particularly difficult or confusing.
