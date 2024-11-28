@@ -1,0 +1,273 @@
+Start testing: Nov 28 04:07 EST
+----------------------------------------------------------
+1/10 Testing: ColumnStatsTest.equals
+1/10 Test: ColumnStatsTest.equals
+Command: "/Users/jinpeng/Desktop/CS660PA4/CS660_PA4/build/tests/pa4/pa4" "--gtest_filter=ColumnStatsTest.equals" "--gtest_also_run_disabled_tests"
+Directory: /Users/jinpeng/Desktop/CS660PA4/CS660_PA4/build/tests/pa4
+"ColumnStatsTest.equals" start time: Nov 28 04:07 EST
+Output:
+----------------------------------------------------------
+Running main() from /Users/jinpeng/Desktop/CS660PA4/CS660_PA4/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ColumnStatsTest.equals
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ColumnStatsTest
+[ RUN      ] ColumnStatsTest.equals
+[       OK ] ColumnStatsTest.equals (0 ms)
+[----------] 1 test from ColumnStatsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"ColumnStatsTest.equals" end time: Nov 28 04:07 EST
+"ColumnStatsTest.equals" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/10 Testing: ColumnStatsTest.not_equals
+2/10 Test: ColumnStatsTest.not_equals
+Command: "/Users/jinpeng/Desktop/CS660PA4/CS660_PA4/build/tests/pa4/pa4" "--gtest_filter=ColumnStatsTest.not_equals" "--gtest_also_run_disabled_tests"
+Directory: /Users/jinpeng/Desktop/CS660PA4/CS660_PA4/build/tests/pa4
+"ColumnStatsTest.not_equals" start time: Nov 28 04:07 EST
+Output:
+----------------------------------------------------------
+Running main() from /Users/jinpeng/Desktop/CS660PA4/CS660_PA4/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ColumnStatsTest.not_equals
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ColumnStatsTest
+[ RUN      ] ColumnStatsTest.not_equals
+[       OK ] ColumnStatsTest.not_equals (0 ms)
+[----------] 1 test from ColumnStatsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"ColumnStatsTest.not_equals" end time: Nov 28 04:07 EST
+"ColumnStatsTest.not_equals" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/10 Testing: ColumnStatsTest.less_than
+3/10 Test: ColumnStatsTest.less_than
+Command: "/Users/jinpeng/Desktop/CS660PA4/CS660_PA4/build/tests/pa4/pa4" "--gtest_filter=ColumnStatsTest.less_than" "--gtest_also_run_disabled_tests"
+Directory: /Users/jinpeng/Desktop/CS660PA4/CS660_PA4/build/tests/pa4
+"ColumnStatsTest.less_than" start time: Nov 28 04:07 EST
+Output:
+----------------------------------------------------------
+Running main() from /Users/jinpeng/Desktop/CS660PA4/CS660_PA4/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ColumnStatsTest.less_than
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ColumnStatsTest
+[ RUN      ] ColumnStatsTest.less_than
+[       OK ] ColumnStatsTest.less_than (0 ms)
+[----------] 1 test from ColumnStatsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"ColumnStatsTest.less_than" end time: Nov 28 04:07 EST
+"ColumnStatsTest.less_than" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/10 Testing: ColumnStatsTest.less_than_or_equals
+4/10 Test: ColumnStatsTest.less_than_or_equals
+Command: "/Users/jinpeng/Desktop/CS660PA4/CS660_PA4/build/tests/pa4/pa4" "--gtest_filter=ColumnStatsTest.less_than_or_equals" "--gtest_also_run_disabled_tests"
+Directory: /Users/jinpeng/Desktop/CS660PA4/CS660_PA4/build/tests/pa4
+"ColumnStatsTest.less_than_or_equals" start time: Nov 28 04:07 EST
+Output:
+----------------------------------------------------------
+Running main() from /Users/jinpeng/Desktop/CS660PA4/CS660_PA4/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ColumnStatsTest.less_than_or_equals
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ColumnStatsTest
+[ RUN      ] ColumnStatsTest.less_than_or_equals
+[       OK ] ColumnStatsTest.less_than_or_equals (0 ms)
+[----------] 1 test from ColumnStatsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"ColumnStatsTest.less_than_or_equals" end time: Nov 28 04:07 EST
+"ColumnStatsTest.less_than_or_equals" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/10 Testing: ColumnStatsTest.greater_than
+5/10 Test: ColumnStatsTest.greater_than
+Command: "/Users/jinpeng/Desktop/CS660PA4/CS660_PA4/build/tests/pa4/pa4" "--gtest_filter=ColumnStatsTest.greater_than" "--gtest_also_run_disabled_tests"
+Directory: /Users/jinpeng/Desktop/CS660PA4/CS660_PA4/build/tests/pa4
+"ColumnStatsTest.greater_than" start time: Nov 28 04:07 EST
+Output:
+----------------------------------------------------------
+Running main() from /Users/jinpeng/Desktop/CS660PA4/CS660_PA4/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ColumnStatsTest.greater_than
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ColumnStatsTest
+[ RUN      ] ColumnStatsTest.greater_than
+[       OK ] ColumnStatsTest.greater_than (0 ms)
+[----------] 1 test from ColumnStatsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"ColumnStatsTest.greater_than" end time: Nov 28 04:07 EST
+"ColumnStatsTest.greater_than" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/10 Testing: ColumnStatsTest.greater_than_or_equals
+6/10 Test: ColumnStatsTest.greater_than_or_equals
+Command: "/Users/jinpeng/Desktop/CS660PA4/CS660_PA4/build/tests/pa4/pa4" "--gtest_filter=ColumnStatsTest.greater_than_or_equals" "--gtest_also_run_disabled_tests"
+Directory: /Users/jinpeng/Desktop/CS660PA4/CS660_PA4/build/tests/pa4
+"ColumnStatsTest.greater_than_or_equals" start time: Nov 28 04:07 EST
+Output:
+----------------------------------------------------------
+Running main() from /Users/jinpeng/Desktop/CS660PA4/CS660_PA4/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ColumnStatsTest.greater_than_or_equals
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ColumnStatsTest
+[ RUN      ] ColumnStatsTest.greater_than_or_equals
+[       OK ] ColumnStatsTest.greater_than_or_equals (0 ms)
+[----------] 1 test from ColumnStatsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"ColumnStatsTest.greater_than_or_equals" end time: Nov 28 04:07 EST
+"ColumnStatsTest.greater_than_or_equals" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/10 Testing: ColumnStatsTest.empty
+7/10 Test: ColumnStatsTest.empty
+Command: "/Users/jinpeng/Desktop/CS660PA4/CS660_PA4/build/tests/pa4/pa4" "--gtest_filter=ColumnStatsTest.empty" "--gtest_also_run_disabled_tests"
+Directory: /Users/jinpeng/Desktop/CS660PA4/CS660_PA4/build/tests/pa4
+"ColumnStatsTest.empty" start time: Nov 28 04:07 EST
+Output:
+----------------------------------------------------------
+Running main() from /Users/jinpeng/Desktop/CS660PA4/CS660_PA4/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ColumnStatsTest.empty
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ColumnStatsTest
+[ RUN      ] ColumnStatsTest.empty
+[       OK ] ColumnStatsTest.empty (0 ms)
+[----------] 1 test from ColumnStatsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"ColumnStatsTest.empty" end time: Nov 28 04:07 EST
+"ColumnStatsTest.empty" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/10 Testing: ColumnStatsTest.small
+8/10 Test: ColumnStatsTest.small
+Command: "/Users/jinpeng/Desktop/CS660PA4/CS660_PA4/build/tests/pa4/pa4" "--gtest_filter=ColumnStatsTest.small" "--gtest_also_run_disabled_tests"
+Directory: /Users/jinpeng/Desktop/CS660PA4/CS660_PA4/build/tests/pa4
+"ColumnStatsTest.small" start time: Nov 28 04:07 EST
+Output:
+----------------------------------------------------------
+Running main() from /Users/jinpeng/Desktop/CS660PA4/CS660_PA4/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ColumnStatsTest.small
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ColumnStatsTest
+[ RUN      ] ColumnStatsTest.small
+[       OK ] ColumnStatsTest.small (0 ms)
+[----------] 1 test from ColumnStatsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"ColumnStatsTest.small" end time: Nov 28 04:07 EST
+"ColumnStatsTest.small" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/10 Testing: ColumnStatsTest.big
+9/10 Test: ColumnStatsTest.big
+Command: "/Users/jinpeng/Desktop/CS660PA4/CS660_PA4/build/tests/pa4/pa4" "--gtest_filter=ColumnStatsTest.big" "--gtest_also_run_disabled_tests"
+Directory: /Users/jinpeng/Desktop/CS660PA4/CS660_PA4/build/tests/pa4
+"ColumnStatsTest.big" start time: Nov 28 04:07 EST
+Output:
+----------------------------------------------------------
+Running main() from /Users/jinpeng/Desktop/CS660PA4/CS660_PA4/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ColumnStatsTest.big
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ColumnStatsTest
+[ RUN      ] ColumnStatsTest.big
+[       OK ] ColumnStatsTest.big (0 ms)
+[----------] 1 test from ColumnStatsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"ColumnStatsTest.big" end time: Nov 28 04:07 EST
+"ColumnStatsTest.big" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/10 Testing: ColumnStatsTest.sparse
+10/10 Test: ColumnStatsTest.sparse
+Command: "/Users/jinpeng/Desktop/CS660PA4/CS660_PA4/build/tests/pa4/pa4" "--gtest_filter=ColumnStatsTest.sparse" "--gtest_also_run_disabled_tests"
+Directory: /Users/jinpeng/Desktop/CS660PA4/CS660_PA4/build/tests/pa4
+"ColumnStatsTest.sparse" start time: Nov 28 04:07 EST
+Output:
+----------------------------------------------------------
+Running main() from /Users/jinpeng/Desktop/CS660PA4/CS660_PA4/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ColumnStatsTest.sparse
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ColumnStatsTest
+[ RUN      ] ColumnStatsTest.sparse
+[       OK ] ColumnStatsTest.sparse (1 ms)
+[----------] 1 test from ColumnStatsTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"ColumnStatsTest.sparse" end time: Nov 28 04:07 EST
+"ColumnStatsTest.sparse" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 28 04:07 EST

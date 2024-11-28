@@ -1,0 +1,11 @@
+ColumnStatsTest.equals 1 0.0155677
+ColumnStatsTest.not_equals 1 0.0125866
+ColumnStatsTest.less_than 1 0.0157997
+ColumnStatsTest.less_than_or_equals 1 0.0131625
+ColumnStatsTest.greater_than 1 0.0133447
+ColumnStatsTest.greater_than_or_equals 1 0.0193844
+ColumnStatsTest.empty 1 0.0201072
+ColumnStatsTest.small 1 0.0201272
+ColumnStatsTest.big 1 0.0220637
+ColumnStatsTest.sparse 1 0.0195106
+---

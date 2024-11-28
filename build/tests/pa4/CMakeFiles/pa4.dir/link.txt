@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/pa4.dir/histogram_test.cpp.o -o pa4  ../../src/db/libdb.a ../../lib/libgtest_main.a ../../lib/libgtest.a
