@@ -1,10 +1,16 @@
 1. Describe any design decisions you made.
-
-
+The histogram uses a bunch of equally wide buckets (w). I figure out how wide they are by dividing the range (max - min) by the number of buckets. This choice makes estimating how many things there are easier. It assumes all the things are evenly spread in each bucket.
+The buckets should create the bucket dynamically, and leftover values such if the highest number isn't a perfect multiple of w, put the remaining values in the last range. This way, every part of the spectrum is covered without any gaps or overlaps.
+The estimateCardinality function is simple and precise because it uses the same logic with the same number of partial bucket contributions and cumulative sums over each bucket for all the different predicates (EQ, NE, LT, GT, etc.) that can be used with it.
+The out-of-range values that is outside of (min, max) should be ignored in the addValue() method. By doing this it would prevent the graph skewing by invalid data.
 
 2. Describe any missing or incomplete elements of your code.
 
+The code creates Histogram objects and gives them space, but it doesn't handle their deletion. If we don't clean things up, this might cause memory leaks.
 
+Right now, the design assumes that data is evenly spread out in each bucket. This works fine for datasets with a constant rate over time and where the values look kind of random (ergodic). But for other types of datasets, it can cause some visualizations to overestimate or underestimate the truth by a lot.
+
+The way estimateCardinality looks for matching buckets isn't very efficient. It tries to find the closest tuples, but nearest-neighbor searches are usually pretty slow. If the bucketing scheme can be expressed as a space metric, we can use an indexed space partitioning method to make estimateCardinality run faster, especially with many buckets.
 
 3. Answer the analytical questions.
 Q1.Given the cardinality of a selection predicate, can you estimate the IO cost of the query? What other factors would you need to consider to estimate the IO cost?
@@ -14,10 +20,14 @@ are whether it is clustered or unclustered indices of the storage; the size of t
 
 Q2.In the previous assignment we introduced a join operation. How would you estimate the cardinality of a join between two tables based on the histograms of the join columns?
 
-Based on the history of the join columns, we can compute the overlap between the histograms of the join columns of the equi-join. We can estimate the matching tuples from both tables by calculating the sum of min(histA[i],histB[i]) from i = 1 to number of buckets. For join type like inequality, assumptions about uniform distribution can be used to approximate the matching tuples. Additional factors, such as the type of join predicate such as equi-join and range join, the sizes of the tables, and the distribution of values in the join columns, must also be considered.
+Based on the history of the join columns, we can compute the overlap between the histograms of the join columns of the equi-join. We can estimate the matching tuples from both tables by calculating the sum of min(histA[i],histB[i]) from i = 1 to the number of buckets. For join type like inequality, assumptions about uniform distribution can be used to approximate the matching tuples. Additional factors, such as the type of join predicate such as equi-join and range join, the sizes of the tables, and the distribution of values in the join columns, must also be considered.
 
 Q3.A table is stored in a file that consists of 150000 pages. Assume the cardinality of a predicate is 1000, a leaf page can fit 50 tuples, and the table is stored in a BTreeFile with 3 levels (root -> internal -> leaf). How many pages would you need to read to evaluate the predicate? What if the table was stored in a HeapFile?
+
+A table is stored in a file that consists of 150000 pages and the cardinality of a predicate is 1000, and a leaf page can fit 50 tuples. So 1000 tuples would span 20 leaf pages, find this by reading 1000/50 =20 leaf pages. This will give a total of 23 page reads including 1 root, 1 internal, and 20 leaf pages. If the table was stored in a Heapfile, in the absence of an index, all 150000 pages would need to be scanned to evaluate the predicate, and it would dramatically increase the IO cost. 
 
 
 
 4. Describe how long you spent on the assignment, and whether there was anything you found particularly difficult or confusing.
+
+I spent about 10 hours on this assignment, including reading through the readme file, understanding the requirements, designing the solution, and implementing the ColumStats class. Testing for the edge cases was confusing such as values that is outside the range and empty buckets as it required us to think more through for the project. Also designing the histogram  such as deciding the bucket structure to handle edge cases is difficult. 
